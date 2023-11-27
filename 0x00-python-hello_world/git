@@ -1,8 +1,8 @@
 #!/bin/bash
 
 echo "add your commit: "
-read $COMMIT
+read COM
 
 git add .
-git commit -m "$COMMIT"
+git commit -m "$COM"
 git push
