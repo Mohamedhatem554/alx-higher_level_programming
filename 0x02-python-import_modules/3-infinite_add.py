@@ -1,9 +1,9 @@
 #!/usr/bin/python3
 
-def print_arg(argv):
+def add_args(argv):
     n = len(argv) - 1
     if n == 0:
-        print("{} arguments.".format(n))
+        print("{}".format(n))
         return
     else:
         if n == 1:
