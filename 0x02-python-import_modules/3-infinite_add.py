@@ -6,17 +6,14 @@ def add_args(argv):
         print("{}".format(n))
         return
     else:
-        if n == 1:
-            print("{} argument:".format(n))
-        else:
-            print("{} arguments:".format(n))
-
-        x = 1
-        while x <= n:
-            print("{:d}: {:s}".format(x, argv[x]))
-            x += 1
+        i = 1
+        add = 0
+        while i <= n:
+            add += int(argv[i])
+            i += 1
+        print("{}".format(add))
 
 
 if __name__ == "__main__":
     import sys
-    print_arg(sys.argv)
+    add_args(sys.argv)
