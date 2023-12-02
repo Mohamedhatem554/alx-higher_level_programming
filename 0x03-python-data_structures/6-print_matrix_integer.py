@@ -8,5 +8,5 @@ def print_matrix_integer(matrix=[[]]):
             if j == columns - 1:
                 print("{:d}".format(matrix[i][j]), end="")
             else:
-                print("{:d}".format(matrix[i][j]), end= " ")
+                print("{:d}".format(matrix[i][j]), end=" ")
         print()
