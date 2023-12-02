@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 def multiple_returns(sentence):
-    if sentence == "" or sentence == None:
+    if sentence == "" or sentence is None:
         r2 = None
         r1 = 0
         return (r1, r2)
