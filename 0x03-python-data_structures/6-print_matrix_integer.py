@@ -1,12 +1,12 @@
 #!/usr/bin/python3
 
 def print_matrix_integer(matrix=[[]]):
-    for i in range(len(matrix)):
-        pass
-    Row = len(matrix)
-    Column = len(matrix[i])
-
-    for row in range(Row):
-        for column in range(Column):
-            print("{:d}".format(matrix[row][column]), end=" ")
+    Rows = len(matrix)
+    columns = len(matrix[0])
+    for i in range(0, Rows):
+        for j in range(0, columns):
+            if j == columns - 1:
+                print("{:d}".format(matrix[i][j]), end="")
+            else:
+                print("{:d}".format(matrix[i][j]), end= " ")
         print()
