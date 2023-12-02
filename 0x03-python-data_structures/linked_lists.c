@@ -72,3 +72,22 @@ void free_listint(listint_t *head)
 		free(current);
 	}
 }
+
+
+/**
+ * _check - function
+ * @head: header
+ * @l: last
+ * Return: 1 if success
+*/
+int _check(listint_t **head, listint_t *l)
+{
+	if (l == NULL)
+	return (1);
+	if (_check(head, l->next) && (*head)->n == l->n)
+	{
+		*head = (*head)->next;
+		return (1);
+	}
+	return (0);
+}
