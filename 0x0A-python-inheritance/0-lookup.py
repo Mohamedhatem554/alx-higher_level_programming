@@ -3,11 +3,11 @@
 """def lookup"""
 
 def lookup(obj):
-    """look for all attributes of the object
+    """lookup for all attributes of the object
 
-        Args:
-            obj: object class
-        Returns:
-            N
+    Args:
+        obj: object class
+    Returns:
+        N
     """
     return [n for n in dir(obj)]
