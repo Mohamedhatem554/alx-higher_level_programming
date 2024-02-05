@@ -1,15 +1,14 @@
 #!/usr/bin/python3
-"""
-Attribute lookup
-"""
+"""def lookup"""
 
 
 def lookup(obj):
-    """Lookup all attributes in Class
+    """lookup for all attributes of the object
 
     Args:
         obj: object class
     Returns:
         Na
     """
-    return [i for i in dir(obj)]
+    return [n for n in dir(obj)]
+
