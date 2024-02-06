@@ -2,7 +2,7 @@
 """7-base_geometry.py"""
 
 
-class BaseGeometry:
+class BaseGeometry():
     """class base geometry"""
 
     def area(self):
@@ -27,4 +27,4 @@ class BaseGeometry:
         if type(value) is not int:
             raise TypeError("{:s} must be an integer".format(name))
         if value <= 0:
-            raise TypeError("{:s} must be greater than 0".format(name))
+            raise ValueError("{:s} must be greater than 0".format(name))
