@@ -4,6 +4,8 @@
 
 Rectangle = __import__('9-rectangle').Rectangle
 
+"""square class"""
+
 
 class square(Rectangle):
     """class square
@@ -27,4 +29,4 @@ class square(Rectangle):
         Returns:
             Square size
         """
-        return "[Square] {:s}/{:s}".format(self.__size, self.__size,)
+        return "[Square] {:d}/{:d}".format(self.__size, self.__size,)
