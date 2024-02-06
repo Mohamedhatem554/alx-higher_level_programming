@@ -1,20 +1,32 @@
 #!/usr/bin/python3
-"""11-square.py
-"""
+"""11-square.py"""
 
 
 Rectangle = __import__('9-rectangle').Rectangle
 
+"""square class"""
+
 
 class Square(Rectangle):
-    """ inherits from Rectangle """
+    """class square
 
+    Args:
+        Rectangle (class): Rectangle class
+    """
     def __init__(self, size):
-        """ Constructor """
+        """constructor
+
+        Args:
+            size (int): square size
+        """
         self.integer_validator("size", size)
         self.__size = size
         super().__init__(size, size)
 
     def __str__(self):
-        """ print(self) method """
-        return '[Square] {:d}/{:d}'.format(self.__size, self.__size)
+        """function str
+
+        Returns:
+            Square size
+        """
+        return "[Square] {:d}/{:d}".format(self.__size, self.__size,)
