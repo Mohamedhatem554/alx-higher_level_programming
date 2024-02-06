@@ -3,7 +3,7 @@
 
 
 def is_same_class(obj, a_class):
-    """define func
+    """define funcion
 
     Args:
         obj:object
@@ -12,4 +12,6 @@ def is_same_class(obj, a_class):
     Returns:
         type
     """
-    return type(obj) == a_class
+    if type(obj) is a_class:
+        return True
+    return False
