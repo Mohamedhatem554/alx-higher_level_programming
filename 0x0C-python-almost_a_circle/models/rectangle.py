@@ -40,7 +40,7 @@ class Rectangle(Base):
     def y(self):
         """Y"""
         return self.__y
-    
+
     def y(self, v):
         self.validate_integer("y", v, False)
         self.__y = v
