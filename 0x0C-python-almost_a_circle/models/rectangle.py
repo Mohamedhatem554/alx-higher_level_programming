@@ -4,7 +4,9 @@ from models.base import Base
 
 
 class Rectangle(Base):
+    """define class"""
     def __init__(self, width, height, x=0, y=0, id=None):
+        """define constructor"""
         self.__width = width
         self.__height = height
         self.__x = x
@@ -13,9 +15,11 @@ class Rectangle(Base):
         super().__init__(id)
 
     def width(self):
+        """width"""
         return self.__width
 
     def width(self, v):
+        """width"""
         self.validate_integer("width", v, False)
         self.__width = v
 
@@ -33,8 +37,13 @@ class Rectangle(Base):
         self.validate_integer("x", v, False)
         self.__x = v
 
-    def x(self, v):
-        return self.__x
+    def y(self):
+        """Y"""
+        return self.__y
+    
+    def y(self, v)
+        self.validate_integer("y", v, False)
+        self.__y = v
 
     def validate_integer(self, name, value, eq=True):
         '''Method for validating the value.'''
