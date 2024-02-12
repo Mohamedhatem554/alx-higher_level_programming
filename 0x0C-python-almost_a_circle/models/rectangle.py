@@ -41,7 +41,7 @@ class Rectangle(Base):
         """Y"""
         return self.__y
     
-    def y(self, v)
+    def y(self, v):
         self.validate_integer("y", v, False)
         self.__y = v
 
