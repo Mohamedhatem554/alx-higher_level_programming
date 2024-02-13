@@ -77,4 +77,4 @@ class Rectangle(Base):
         """return the string"""
         return "[{}] ({}) {}/{} - {}/{}".\
             format(type(self).__name__, self.id, self.x, self.y, self.width,
-                    self.height)
+                   self.height)
