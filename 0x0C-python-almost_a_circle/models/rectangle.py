@@ -64,4 +64,5 @@ class Rectangle(Base):
             raise ValueError("{} must be > 0".format(name))
 
     def area(self):
+        """calc area"""
         return self.width * self.height
