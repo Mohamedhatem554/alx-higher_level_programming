@@ -72,3 +72,7 @@ class Rectangle(Base):
         d = '\n' * self.y + \
             (' ' * self.x + '#' * self.width + '\n') * self.height
         print(d, end='')
+
+    def __str__(self):
+        """return the string"""
+        return "[{}] ({}) {}/{} - {}/{}".format(type(self).__name_, self.id, self.x, self.y, self.width, self.height)
