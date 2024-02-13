@@ -40,3 +40,7 @@ class Square(Rectangle):
             self.x = x
         if y is not None:
             self.y = y
+
+    def to_dictionary(self):
+        return {"id": self.id, "size": self.width,
+                "x": self.x, "y": self.y}
